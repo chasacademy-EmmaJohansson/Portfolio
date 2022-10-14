@@ -1,0 +1,654 @@
+*{
+margin:0;
+padding:0;
+
+}
+body{
+background-color: rgba(235, 237, 207);
+}
+
+/*fixed menu & footer start*/
+ul{
+list-style: none;
+    }
+
+header{
+background-color: rgba(0, 45, 11, 0.527);
+color: rgba(243, 220, 182, 0.596);
+font-family: 'Open Sans', sans-serif;
+padding: 1.5em;
+position: relative;
+} 
+
+.mainmenu{
+background-color: rgba(0, 45, 11, 0.527);
+display: flex;
+justify-content: space-around;
+max-width: 100%;
+}
+
+.mainmenu li{
+border-bottom: 2px outset rgb(85, 134, 96);
+border-left: 2px outset rgba(117, 151, 109);
+cursor: pointer;
+flex: auto;
+margin: 0.5em;
+padding: 0.5rem;
+text-align: center;
+}
+
+.mainmenu a{
+color: rgba(218, 182, 146, 0.678);
+text-decoration: none;
+}
+.mainmenu a:hover {
+color: #3b5004;
+}
+.mainmenu li a:hover{
+padding-right:40px;
+}
+.mainmenu li a i{
+margin-right: 1em;
+}
+ 
+footer{
+background-color: rgba(0, 45, 11, 0.427);
+bottom: 0px;
+color:rgba(243, 220, 182, 0.596);
+display: flex;
+flex-direction: row;
+height: 5em;
+justify-content: space-evenly;
+max-width: 100%;
+}
+    
+footer i{
+font-size: 2em;
+margin-top: 0.5em;
+    }
+
+/*Fixed menu and footer end*/
+/* Home page start*/
+.main_home{
+background-color: rgba(0, 128, 0, 0.021);
+display: flex;
+justify-content:center;
+margin-top: 5em;
+max-width: 100%;
+}
+
+.typed > h2{
+color: rgba(136, 150, 105);
+font-family: 'Noto Sans Ethiopic', sans-serif;
+font-size: 6em;
+margin-bottom: 0.2em;
+}
+.typed{
+align-items: center;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+font-family: 'Noto Sans Ethiopic', sans-serif;
+padding: 10em;
+}
+
+.typed1{
+color:rgba(136, 150, 105);
+font-size: 2.2em;
+margin-bottom:0.5em;
+}
+
+.typed2{
+animation-delay: 1s;
+animation: typing 4s forwards;
+border-right: .20em ridge rgba(121, 151, 111);
+color: rgba(136, 150, 105);
+font-size: 1.5em;
+font-style: italic;
+overflow: hidden;
+text-align: center;
+white-space: nowrap;
+width: 0;
+}
+
+.typed3{
+animation: typing 4s forwards;
+animation-delay: 3s;
+border-right: .20em ridge rgba(121, 151, 111);
+color: rgba(136, 150, 105);
+text-align: center;
+font-size: 1em;
+font-style: italic;
+overflow: hidden;
+white-space: nowrap;
+width: 0;
+
+}
+.typed3 a{
+color: rgb(173, 187, 143);
+
+}
+.typed3 a:hover{
+color:olive;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+@media screen and (max-width: 700px){
+
+.typed{
+padding: 5em;
+}
+.typed > h2{
+font-size:3em;
+}
+.typed1{
+font-size: 1.2em;
+    }
+.typed2,.typed3, footer i {
+font-size: 1em;
+}
+.mainmenu{
+flex-direction: column;
+}
+
+ .mainmenu li{
+text-align: center;
+ }   
+    }
+/*Home page ends*/
+
+/*CV page start*/
+.main_cv{
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(3, auto);
+margin-top: 1em;
+
+}
+
+.cv_header{
+background-color: rgba(185, 190, 149, 0.501);
+border: 10px ridge rgba(210, 221, 184);
+color: rgba(151, 165, 103);
+grid-column: 3/7;
+grid-row: 1;
+padding: 2em;
+text-align: center;
+}    
+
+.cv_col1{
+background-color: rgba(185, 190, 149, 0.501);
+border: 10px ridge rgba(210, 221, 184);
+grid-column: 3/4;
+grid-row: 2;
+}
+
+.cv_col1 h2{
+color: rgba(151, 165, 103);
+margin-bottom: 1em;
+margin-top:1em;
+text-align: center;
+}
+
+.cv_col1 h4{
+color: rgba(151, 165, 103);
+text-align: center;
+text-decoration: underline;
+}
+
+.cv_col1 ul{
+color: rgba(151, 165, 103);
+margin: 1.5em;
+text-align: center;
+}
+
+.cv_col1 li{
+color: rgba(151, 165, 103);
+margin-bottom: 3em;
+margin-top: 1.5em;
+text-align: center;
+}
+
+.cv_col1 p{
+color: rgba(151, 165, 103);
+font-style:italic;
+text-align: center;
+}
+    
+.cv_col2{
+background-color: rgba(185, 190, 149, 0.501);
+border: 10px ridge rgba(210, 221, 184);
+grid-column:4/7;
+grid-row:2;
+}
+    
+.quote{
+background-color: rgba(247, 251, 213, 0.501);
+border-bottom: 2px groove rgba(192, 191, 207, 0.214);
+color: rgba(151, 165, 103);
+padding: 30%;
+}
+
+.quote_text{
+border-top: 3px inset black;
+border-bottom: 3px groove black;
+color: rgba(151, 165, 103);
+font-family: 'Noto Sans Ethiopic', sans-serif;
+font-size: 1.2em;
+font-style:oblique;
+max-width: 100%;
+position: sticky;
+}
+    
+.quote_credit{
+float: right;
+}
+
+.skills_img{
+text-align: center;
+}
+
+.skills{
+color: rgba(151, 165, 103);
+margin-bottom: 2em;
+text-align: center;
+}
+
+.skills p{
+margin-bottom: 2em;
+text-decoration: underline;
+}
+
+.skills img{
+max-height:50%;
+max-width:50%;
+    }
+    
+@media screen and (max-width: 750px){
+    
+.cv_header{
+grid-column: 3/7;
+grid-row:1;
+font-size: 0.8em;
+    }
+
+.cv_col1{
+grid-column:3/7;
+grid-row:2;
+    }
+.cv_col1 > h2{
+font-size:1em;
+}
+.cv_col1 > h4, .cv_col2 > h4{
+font-size: 0.8em;
+}
+.cv_col2{
+grid-column:3/7;
+grid-row:3;
+}
+    
+.quote_text{
+font-size:1em;
+}
+}
+
+/*CV page ends*/
+
+/*Portfolio page start*/
+
+.main_portfolio{
+color:rgba(169, 147, 111, 0.505);
+font-size: 2em;
+margin-top: 2em;
+text-align: center;
+}
+
+.main_portfolio p{
+font-size: 0.9em;
+}
+
+.main_portfolio a{
+color:rgba(95, 87, 75, 0.764);
+font-size:0.8em;
+}
+
+.main_portfolio a:hover{
+color:rgba(175, 186, 147, 0.837);
+}
+
+.projects img{
+border: 5px groove white;
+border-radius: 15%;
+max-width: 50%;
+margin-top: 0.5em;
+opacity: 95%;
+}
+    
+.projects{
+align-items: center;
+display: grid;
+gap: 1em;
+grid-template-columns: repeat(5, 1fr);
+margin-top: 2em;
+text-align: center;
+}
+
+.projects p{
+border: 2px groove rgba(246, 245, 242);
+color:rgba(90, 67, 31, 0.505);
+padding: 0.2em;
+}
+   
+.column1{
+background: rgba(158, 168, 128, 0.247);
+border: 5px groove rgba(121, 151, 111);
+grid-column:2/3;
+grid-row: 2;
+transform: rotate(-8deg);
+}
+
+.column2{
+background: rgba(158, 168, 128, 0.247);
+border: 5px groove rgba(121, 151, 111);
+grid-column:4/5;
+grid-row:1;
+transform: rotate(8deg);
+}
+
+.column3{
+background: rgba(158, 168, 128, 0.247);
+border: 5px groove rgba(121, 151, 111);
+grid-column: 3/5;
+grid-row:2/2;
+}
+
+.column4{
+background: rgba(158, 168, 128, 0.247);
+border: 5px groove rgba(121, 151, 111);
+grid-column:2/4;
+grid-row: 1;
+}
+
+/*Modal popup*/
+.modal-container {
+margin: 0 auto;
+margin-top:0.5em;
+max-width: 100%;
+position: relative;
+}
+
+.modal-container button {
+background: #908d6a8e;
+border: 0;
+border-radius: 3px;
+box-shadow: 0 5px 5px -5px #333;
+color: #fff;
+display: block;
+font-size: 22px;
+height: 5vh;
+margin: 0 auto;
+max-width: 100%;
+transition: 0.3s ease-in;
+}
+
+.modal-container .modal-backdrop {
+height: 0;
+opacity: 0;
+overflow: hidden;
+transition: opacity 0.2s ease-in;
+width: 0;
+}
+
+.modal-container #modal-toggle {
+cursor: pointer;
+position: absolute;
+height: 100%;
+left: 0;
+margin: 0;
+opacity: 0;
+top: 0;
+width: 100%;
+}
+
+.modal-container #modal-toggle:hover ~ button { 
+background: #32664bb5; 
+}
+
+.modal-container #modal-toggle:checked {
+background: rgba(0, 0, 0, 0.7);
+left: 0;
+max-height: 100%;
+max-width: 100%;
+opacity: 0;
+position: fixed;
+top: 0;
+z-index: 9;
+}
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop {
+height: 100vh;
+left: 0;
+opacity: 1;
+pointer-events: none;
+position: fixed;
+top: 0;
+width: 100vw;
+z-index: 9;
+}
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+background-color: #fafaf6fb; 
+border: 3px ridge rgb(91, 123, 66);
+border-radius: 4px;
+box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+cursor: auto;
+left:25%;
+max-height: 100%;
+max-width: 100%;
+pointer-events: auto;
+position: absolute;
+top: 45%;
+width:30vw;
+z-index: 999;
+}
+/*Modal popup end*/
+  
+ @media screen and (max-width: 700px){
+.projects{
+gap:1.5em;
+}
+
+.projects p{
+margin-bottom: 0.5em;
+}
+
+.column1{
+ grid-column:2/8;
+ grid-row:4;
+ transform: rotate(-10deg);
+}
+
+.column2{
+grid-column: 2/8;
+grid-row: 2;
+margin-top:1.5em;
+transform: rotate(8deg);
+}
+
+.column3{
+grid-column: 2/8;
+grid-row:3;
+margin-top: 1.5em;
+transform: rotate(-10deg);
+}
+
+.column4{
+grid-column: 2/8;
+grid-row: 1;
+margin-top: 1.5em;
+transform: rotate(8deg);
+}
+
+.modal-container{
+font-size: 0.5em;
+}
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+top:20%;
+    }
+}
+
+/*End of portfolio*/
+
+/*About me starts*/
+
+.main_aboutme{
+align-items: center;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.about_me{
+color: rgba(151, 165, 103);
+flex:75%;
+text-align: center;
+}
+
+.about_me h2{
+font-size: 2em;
+}
+
+.about_me p{
+background-color: rgba(141, 169, 125, 0.171);
+line-height: 2em;
+}
+
+.sidebar{
+background-color: rgba(0, 45, 11, 0.427);
+border-radius:5%;
+color: beige;
+flex: 25%;
+font-family: 'Noto Sans Ethiopic', sans-serif;
+line-height: 2em;
+margin-top: 3rem;
+}
+
+.sidebar p{
+text-align: center;
+}
+
+.gallery {
+align-items: center;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+justify-items: center;
+margin-top: 2em;
+}
+
+.gallery img{
+max-width: 35%;
+opacity: 90%;
+}
+
+.picture{
+border: 10px ridge rgba(172, 181, 129);
+grid-column:3/5;
+grid-row:1;
+}
+
+.egg{
+border: 10px ridge rgba(172, 181, 129);
+grid-column:5/7;
+grid-row:1;
+}
+
+.crochet{
+border: 10px ridge rgba(172, 181, 129);
+grid-column:1/3;
+grid-row:1;
+}
+
+@media screen and (max-width:700px){
+.gallery{
+gap: 2em;
+}
+
+.picture{
+grid-column: 1/6;
+grid-row: 1;
+}
+
+.crochet{
+grid-column:1/6;
+grid-row:2;
+}
+
+.egg{
+grid-column:1/6;
+grid-row:3;
+}
+
+.main_aboutme{
+flex-direction: column;
+align-items: stretch;
+}
+}
+/*About me page ends*/
+
+/*Contact page start*/
+.header_contact{
+color: rgba(169, 147, 111, 0.505);
+font-size: 2em;
+margin-bottom: 2em;
+margin-top: 1.5em;
+text-align: center;
+}
+
+.main_contact{
+display:flex;
+justify-content: center;
+padding: 2em;
+}
+
+.card{
+align-items: center;
+background: rgba(122, 157, 106, 0.549);
+border: 3px double black;
+box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.57);
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: 15em;
+max-width:100%;
+}
+
+.card img{
+max-width: 15%;
+}
+.card h3{
+margin-bottom:1em;
+text-align: center;
+}
+
+.card p{
+margin: 0.5em;
+text-align: center;
+}
+
+.card i{
+ margin-top:1em;
+}
+
+.card a{
+color: black;
+}
+
+.card a:hover{
+color:#3b5004;
+}
+/* contact page end */
+
