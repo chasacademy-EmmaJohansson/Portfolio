@@ -1,0 +1,40 @@
+{
+    "basics": [{
+        "name": "Emma Johansson"
+    }
+],
+    
+    "employment": [
+        {
+        "company": "IKEA",
+        "position": "Bedspecialist and seller",
+        "startDate": "-2021-06",
+        "endDate": "-Present"
+    },
+    {
+        "company": "TWILFIT",
+        "position": "Store Manager",
+        "startDate": "-2016-06",
+        "endDate": "-2021-06"
+    }
+],
+"education" :[
+{
+    "school": "Chas Academy",
+    "type": "- Vocational Universities",
+    "year": "- Present"
+},
+{
+    "school": "Norra Real",
+    "type": "- Senior High School",
+    "year": "- 2013-2016"
+}
+],
+"skills": [
+    {
+    "skills": "CSS, HTML",
+    "inProgress": "In progress: JavaScript"
+    }
+]
+}
+    

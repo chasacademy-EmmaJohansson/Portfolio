@@ -22,50 +22,94 @@
     <ul class = "mainmenu">
     <li><a href="home.html"><i class="fa-solid fa-house"></i>Home</a></li>
     <li><a href="cv.html"><i class="fa-solid fa-layer-group"></i>CV</a></li>
-    <li><a href="portfolio.html"><i class="fa-regular fa-folder-open"></i>Portfolio</a></li>
-    <li><a href="aboutme.html"><i class="fa-solid fa-person"></i>About me</a></li>
+    <li class="currentPage"><a href="portfolio.html"><i class="fa-regular fa-folder-open"></i>Portfolio</a></li>   
+     <li><a href="aboutme.html"><i class="fa-solid fa-person"></i>About me</a></li>
     <li><a href="contact.html"><i class="fa-regular fa-comment-dots"></i>Contact</a></li>
     </ul>
 </nav>
-
-   <main class ="main_portfolio"><strong>Some of my work</strong> <br>
-   <p>Want to see more?</p> <a href ="contact.html" > Contact me </a>
-    <div class = portfolio_container>
-    <div class ="projects">
-     <div class ="column1">
-        <p>Card</p>
-    <img src= "card.jpg" alt ="img1">
-     </div>
-    <div class = "column2">
-        <p>Traficlights</p>
-    <img src ="traficlights.jpg" alt="img2">
+<main class ="main_portfolio"><strong>Some of my work</strong> <br>
+  
+  <section class ="cards">
+    <div class ="card_single">
+       <div class ="card_front">
+        <h2>Number Guessing Game</h2>
+        <img src="guess.jpg"  alt="guessAnumber">
+       </div>
+       <div class ="card_back">
+        <div class ="card_back_text">
+       <h2>Number Guessing Game</h2>
+       <p>Made with HTML, CSS, JavaScript</p>
+       <p>See code <a href="https://github.com/chasacademy-EmmaJohansson/emma-" target="_blank">here</a></p>
+        </div>
+       </div>
     </div>
 
-    <div class ="column3">
-        <p>Example of layout</p>
-    <img src ="layout.jpg" alt ="img3">
-    </div>
-
-    <div class ="column4">
-    <p>Border Radius</p>
-    <div class="modal-container">
-        <input id="modal-toggle" type="checkbox">
-        <button>Click me</button>
-        <div class="modal-backdrop">
-          <div class="modal-content">
-            <label class="modal-close" for="modal-toggle">x</label>
-            <h4>Border Radius Balls</h4>
-            <p></p>
-            <label class="modal-close-button" for="modal-toggle">
-                See code and work <a href ="https://codepen.io/codepenemma/pen/wvjRjbd" target ="_blank">here</a>
-            </label>
+    <div class ="card_single">
+        <div class ="card_front">
+         <h2>Border Radius Balls</h2>
+         <img src="balls.jpg" alt="radius-balls">
+        </div>
+        <div class ="card_back">
+          <div class ="card_back_text">
+        <h2>Border Radius Balls</h2>
+        <p>Made with HTML & CSS</p>
+        <p>See code <a href="https://codepen.io/codepenemma/pen/wvjRjbd" target="_blank">here</a></p>
           </div>
         </div>
+     </div>
+
+     <div class ="card_single">
+        <div class ="card_front">
+         <h2>Card</h2>
+         <img src="card.jpg"  alt="card">
+        </div>
+        <div class ="card_back">
+          <div class ="card_back_text">
+        <h2>Card</h2>
+        <p>Made with HTML & CSS</p>
+        <p>See code <a href ="https://codepen.io/codepenemma/pen/ExLQqeL" target="_blank">here</a></p>
+          </div>
+        </div>
+     </div>
+
+     <div class ="card_single">
+        <div class ="card_front">
+         <h2>Traffic Lights</h2>
+         <img src="traficlights.jpg"  alt="traficlights">
+        </div>
+        <div class ="card_back">
+          <div class ="card_back_text">
+        <h2>Traffic Lights</h2>
+        <p>Made with HTML & CSS</p>
+        <p>See code <a href ="https://codepen.io/codepenemma/pen/VwxqXoV" target="_blank">here</a></p>
+          </div> 
+        </div>
+     </div>
+
+     <div class ="card_single">
+      <div class ="card_front">
+       <h2>Layout Example</h2>
+       <img src="layout.jpg" alt="card">
       </div>
-    <img src ="balls.jpg" alt=" img4">
-    </div>
-    </div>
-</div>
+      <div class ="card_back">
+        <div class ="card_back_text">
+      <h2>Layout Example</h2>
+      <p>Made with HTML & CSS</p>
+      <p>See code <a href ="https://codepen.io/codepenemma/pen/jOxXxwB" target="_blank">here</a></p>
+        </div>
+      </div>
+   </div>
+
+   <div class ="card_still">
+        <h2>Want to see more?</h2> 
+        <div class="card_contact">
+        <a href ="contact.html" > <br> Contact me </a> <br>
+        <img src="icon.jpg" alt="icon">
+      </div>
+ </div>
+</section>
+
+
 
 </main>
 <footer>
@@ -75,5 +119,6 @@
     <i class="fa-brands fa-youtube"></i>
     <i class="fa-brands fa-codepen"></i>
   </footer>
+  <script src="portfolio.js"></script>
 </body>
 </html>
